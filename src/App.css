@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #101820;
+  color: #333;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+
+.counter{
+  
+}
+
+/* Styling the container */
+div {
+  background-color:#F9E795;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Section headers */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color:#5031F0;
+  border-bottom: 2px solid #5031F0,;
+  padding-bottom: 5px;
+  margin-top: 0;
+}
+
+/* Styling the paragraph (counter value) */
+p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+input[type="email"], input[type="password"] {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+/* Input focus effect */
+input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #5031F0,;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  background-color:#5031F0;
   color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Button hover effect */
+button:hover {
+  background-color: #A1D6E2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Adding subtle transition effect to buttons and inputs */
+button, input {
+  transition: all 0.3s ease;
 }
+
+.increment{
+  width: 50%;
+  margin-left: 100px;
+
+}
+
